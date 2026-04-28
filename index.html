@@ -48,4 +48,67 @@
     .panel {
       background: var(--card);
       border: 1px solid var(--line);
-      bo
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    a.button {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      background: var(--accent);
+      color: #ffffff;
+      padding: 18px 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      min-height: 60px;
+    }
+
+    a.button:hover {
+      background: var(--accent-hover);
+    }
+
+    @media (max-width: 700px) {
+      body { font-size: 18px; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>廬江何氏族譜文獻</h1>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <h2>網站簡介</h2>
+      <p>
+        本網站用來整理及展示廬江何氏（香港西貢南山）相關族譜文獻，包括譜冊、序文、碑文、源流、宗譜世系、祭文、遺記、遺囑、詩文、白話解說與文獻影像，方便海內外親友查閱。
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="buttons">
+        <a class="button" href="genealogy-records.html">譜序與文獻</a>
+        <a class="button" href="genealogy-scan.html">文獻影像</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
