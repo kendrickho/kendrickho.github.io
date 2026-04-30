@@ -83,9 +83,44 @@
       background: var(--accent-hover);
     }
 
+    footer {
+      max-width: 900px;
+      margin: 24px auto 40px auto;
+      padding: 0 24px;
+    }
+
+    .footer-panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 24px;
+      color: var(--muted);
+      font-size: 0.95em;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .footer-panel p {
+      margin: 0 0 10px 0;
+    }
+
+    .footer-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer-panel a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer-panel a:hover {
+      color: var(--accent-hover);
+    }
+
     @media (max-width: 700px) {
       body { font-size: 18px; }
       h1 { font-size: 2rem; }
+      a.button { width: 92%; }
     }
   </style>
 </head>
@@ -100,7 +135,7 @@
     <section class="panel">
       <h2>網站簡介</h2>
       <p>
-        本網站用於整理及展示廬江何氏（香港西貢南山）相關族譜文獻，包括譜冊、序文、碑文、源流、宗譜世系、祭文、遺記、遺囑、詩文、白話解說與文獻影像，方便海內外親友查閱。
+        本網站用於整理及展示廬江何氏（香港西貢南山一脉）相關族譜文獻，包括譜冊、序文、碑文、源流、宗譜世系、祭文、遺記、遺囑、詩文、解說與文獻影像，方便海內外親友查閱。
       </p>
     </section>
 
@@ -111,5 +146,12 @@
       </div>
     </section>
   </main>
+
+  <footer>
+    <div class="footer-panel">
+      <p>如有意見或問題，可聯絡<a href="mailto:kendrickho@gmail.com">本人</a></p>
+      <p>網站最後更新日期：2026年5月</p>
+    </div>
+  </footer>
 </body>
 </html>
